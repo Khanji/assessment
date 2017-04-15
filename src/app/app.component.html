@@ -1,3 +1,36 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <ng-template [ngIf]="feedLogo">
+    <img [src]="feedLogo">
+  </ng-template>
+  <div class="searchBar">
+    <input type="search" (keyup.enter)="findArticles(searchString)" placeholder="Bijv. PHP developer, AngularJS" class="searchInput" [(ngModel)]="searchString">
+    <button (click)="findArticles(searchString)" class="submit">Zoeken</button>
+  </div>
+  <div *ngIf="feedSearchItems" class="searchcounter"><p>{{feedSearchItems.length}}{{foundResultsStr}}</p></div>
+</header>
+
+<ng-template [ngIf]="feedItems || feedSearchItems">
+  <div class="callout">
+    <h1>Vacatures: vind een baan die écht bij je past.</h1>
+  </div>
+  <div *ngFor="let item of (feedSearchItems? feedSearchItems: feedItems) | paginate: {itemsPerPage:10, currentPage: p}" class="container">
+    <div class="logo-container">
+      <img [src]="item.logo ? item.logo : '/assets/images/blank.png'" class="logo">
+    </div>
+    <div class="meta-container">
+      <div [innerHTML]="item.title" class="title"></div>
+      <div [innerHTML]="item.city | capitalize" class="city"></div>
+      <div [innerHTML]="item.province" class="province"></div>
+    </div>
+    <div class="button-container">
+      <a [href]="item.link" class="details-link"><button class="details">{{detailsButtonStr}}</button></a>
+    </div>
+  </div>
+  <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
+</ng-template>
+<ng-template [ngIf]="!feedItems && !feedSearchItems">
+  <div class="container"><p>loading items...</p></div>
+</ng-template>
+<footer>
+  <p>{{footerStr}}</p>
+</footer>

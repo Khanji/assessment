@@ -1,0 +1,73 @@
+{ title: 'Senior Oracle Fusion Engineer (11g)',
+  description: '<p><span>As a Oracle Fusion Middleware engineer you are responsible for analyzing integration problems and designing and developing complex integration solutions at our customers using the Oracle Fusion Middleware platform. Whether working as an individual or as part of a team of engineers, you are able to define innovative solutions an
+d implement them at the customer.</span></p>\r\n<ul>\r\n<li>Extensive knowledge of and experience with the Oracle Fusion Middleware 11g products Oracle SOA Suite 11g and Oracle Service Bus 11g.</li>\r\n<li>5+ years of experience as a SOA and/or integration engineer.</li>\r\n<li>Strong software development and design skills using integration technology.
+</li>\r\n<li>Expert knowledge on integration technologies (XML related technologies, XPATH, XSLT, XQuery, schema design, WS-*)</li>\r\n<li>Interested in and experience with agile development processes (e.g. SCRUM).</li>\r\n<li>Knowledge of and experience with continuous integration/continuous delivery processes and tools (e.g. Jenkins, Hudson, ANT).</l
+i>\r\n<li>Knowledge of automated testing tools for SOA and integration in general (e.g. SOAPUI, Greenhat, LISA)</li>\r\n</ul>',
+  summary: '<p><span>As a Oracle Fusion Middleware engineer you are responsible for analyzing integration problems and designing and developing complex integration solutions at our customers using the Oracle Fusion Middleware platform. Whether working as an individual or as part of a team of engineers, you are able to define innovative solutions and im
+plement them at the customer.</span></p>\r\n<ul>\r\n<li>Extensive knowledge of and experience with the Oracle Fusion Middleware 11g products Oracle SOA Suite 11g and Oracle Service Bus 11g.</li>\r\n<li>5+ years of experience as a SOA and/or integration engineer.</li>\r\n<li>Strong software development and design skills using integration technology.</li
+>\r\n<li>Expert knowledge on integration technologies (XML related technologies, XPATH, XSLT, XQuery, schema design, WS-*)</li>\r\n<li>Interested in and experience with agile development processes (e.g. SCRUM).</li>\r\n<li>Knowledge of and experience with continuous integration/continuous delivery processes and tools (e.g. Jenkins, Hudson, ANT).</li>\r
+\n<li>Knowledge of automated testing tools for SOA and integration in general (e.g. SOAPUI, Greenhat, LISA)</li>\r\n</ul>',
+  date: 2017-04-11T15:04:11.000Z,
+  pubdate: 2017-04-11T15:04:11.000Z,
+  pubDate: 2017-04-11T15:04:11.000Z,
+  link: 'https://www.jouwictvacature.nl/vacature/senior-oracle-fusion-engineer-11g',
+  guid: 'https://www.jouwictvacature.nl/vacature/senior-oracle-fusion-engineer-11g',
+  author: null,
+  comments: null,
+  origlink: null,
+  image: {},
+  source: {},
+  categories: [],
+  enclosures: [],
+  'rss:@': {},
+  'rss:title': { '@': {}, '#': 'Senior Oracle Fusion Engineer (11g)' },
+  'rss:logo':
+   { '@': {},
+     '#': 'https://www.jouwictvacature.nl/uploads/images/logos/TMNS_j.JPG' },
+  'rss:link':
+   { '@': {},
+     '#': 'https://www.jouwictvacature.nl/vacature/senior-oracle-fusion-engineer-11g' },
+  'rss:city': { '@': {}, '#': 'DEN HAAG' },
+  'rss:province': { '@': {}, '#': 'Zuid-Holland' },
+  'rss:description':
+   { '@': {},
+     '#': '<p><span>As a Oracle Fusion Middleware engineer you are responsible for analyzing integration problems and designing and developing complex integration solutions at our customers using the Oracle Fusion Middleware platform. Whether working as an individual or as part of a team of engineers, you are able to define innovative solutions and imp
+lement them at the customer.</span></p>\r\n<ul>\r\n<li>Extensive knowledge of and experience with the Oracle Fusion Middleware 11g products Oracle SOA Suite 11g and Oracle Service Bus 11g.</li>\r\n<li>5+ years of experience as a SOA and/or integration engineer.</li>\r\n<li>Strong software development and design skills using integration technology.</li>
+\r\n<li>Expert knowledge on integration technologies (XML related technologies, XPATH, XSLT, XQuery, schema design, WS-*)</li>\r\n<li>Interested in and experience with agile development processes (e.g. SCRUM).</li>\r\n<li>Knowledge of and experience with continuous integration/continuous delivery processes and tools (e.g. Jenkins, Hudson, ANT).</li>\r\
+n<li>Knowledge of automated testing tools for SOA and integration in general (e.g. SOAPUI, Greenhat, LISA)</li>\r\n</ul>' },
+  permalink: 'https://www.jouwictvacature.nl/vacature/senior-oracle-fusion-engineer-11g',
+  'rss:guid':
+   { '@': {},
+     '#': 'https://www.jouwictvacature.nl/vacature/senior-oracle-fusion-engineer-11g' },
+  'rss:pubdate': { '@': {}, '#': 'Tue, 11 Apr 2017 15:04:11 GMT' },
+  meta:
+   { '#ns': [ [Object] ],
+     '@': [ [Object] ],
+     '#xml': { version: '1.0', encoding: 'utf-8' },
+     '#type': 'rss',
+     '#version': '2.0',
+     title: 'JouwICTvacature.nl vacatures',
+     description: 'JouwICTvacature.nl vacatures RSS feed',
+     date: 2017-04-12T21:41:57.000Z,
+     pubdate: 2017-04-12T21:41:57.000Z,
+     pubDate: 2017-04-12T21:41:57.000Z,
+     link: 'https://www.jouwictvacature.nl',
+     xmlurl: 'https://www.jouwictvacature.nl/rss/1bbc5495-3872-4058-886e-aeee2a1cd52c',
+     xmlUrl: 'https://www.jouwictvacature.nl/rss/1bbc5495-3872-4058-886e-aeee2a1cd52c',
+     author: null,
+     language: null,
+     favicon: null,
+     copyright: null,
+     generator: null,
+     cloud: {},
+     image:
+      { url: 'https://www.jouwictvacature.nl/Content/View2/img-ict/rss-logo.jpg',
+        title: 'JouwICTvacature.nl vacatures' },
+     categories: [],
+     'rss:@': {},
+     'atom:link': { '@': [Object] },
+     'rss:title': { '@': {}, '#': 'JouwICTvacature.nl vacatures' },
+     'rss:description': { '@': {}, '#': 'JouwICTvacature.nl vacatures RSS feed' },
+     'rss:link': { '@': {}, '#': 'https://www.jouwictvacature.nl' },
+     'rss:pubdate': { '@': {}, '#': 'Wed, 12 Apr 2017 21:41:57 GMT' },
+     'rss:image': { '@': {}, url: [Object], title: [Object], link: [Object] } } }
