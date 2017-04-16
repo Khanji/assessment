@@ -24,7 +24,7 @@ export class Item {
     this.title = title !== '' ? title : '-';
     this.logo = logo !== '' ? logo : '-';
     this.link = link !== '' ? link : '-';
-    this.province = province !== '' ? province : '-';
+    this.province = province === 'null' || province === '' ? '' : province;
     this.description = description !== '' ? description : '-';
     this.guid = guid !== '' ? guid : '-';
     this.pubDate = pubDate;
