@@ -44,6 +44,11 @@ $fontFooter: #7a98a7;
   -webkit-flex-shrink: $shrink;
 }
 
+@mixin justifyContent($justify) {
+  justify-content: $justify;
+  -webkit-justify-content: $justify;
+}
+
 /* Styles */
 html, body, header, .container, .callout, .ngx-pagination {
   min-width: 280px !important;
@@ -124,12 +129,14 @@ header {
 .container {
   @include flex;
   @include flexDirection(row);
+  @include justifyContent(space-between);
   flex-shrink: 0;
   width: 80vw;
   height: 140px;
   margin: 3px auto;
   background-color: $bgColorContainer;
   overflow: hidden;
+
   @media only screen and (max-width: 900px) {
     width: 90vw;
   }
@@ -180,8 +187,9 @@ header {
     }
   }
   .button-container {
-    height: 100%;
     @include flex();
+    min-width: 100px;
+    height: 100%;
     padding: 10px;
     a {
       text-decoration: none;
@@ -193,12 +201,8 @@ header {
       button {
         background-color: $bgColorDetailsBtn;
         border: none;
-        width: 166px;
         height: 37px;
         color: $fontButtonText;
-        @media only screen and (max-width: 640px) {
-          width: 100px;
-        }
       }
     }
   }
