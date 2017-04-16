@@ -135,7 +135,7 @@ header {
   }
   .logo-container {
     @include flex;
-    flex-shrink: 0;
+    @include flexShrink(0);
     width: 220px;
     @media only screen and (max-width: 640px) {
       display: none;
@@ -143,6 +143,7 @@ header {
     img {
       display: block;
       width: auto;
+      height: auto;
       max-height: 100px;
       max-width: 160px;
       margin: auto;
@@ -180,7 +181,7 @@ header {
   }
   .button-container {
     height: 100%;
-    display: flex;
+    @include flex();
     padding: 10px;
     a {
       text-decoration: none;
