@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
         this.feedItems = response as Item[];
         // sort the set on pubDate from new to old
         this.feedItems.sort((a: Item, b: Item) => {
-          return Number(new Date(Date.parse(b.pubDate))) - Number(new Date(Date.parse(a.pubDate)));
+          return Number(new Date(Date.parse(a.pubDate))) - Number(new Date(Date.parse(b.pubDate)));
         });
       });
     this.feedLogo = '/assets/images/logo.png';
