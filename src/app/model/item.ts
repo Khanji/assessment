@@ -10,7 +10,7 @@ export class Item {
   province: string;
   description: string;
   guid: string;
-  pubDate: Date;
+  pubDate: string;
 
   constructor(
     title: string,
@@ -27,6 +27,6 @@ export class Item {
     this.province = province !== '' ? province : '-';
     this.description = description !== '' ? description : '-';
     this.guid = guid !== '' ? guid : '-';
-    this.pubDate.setDate(Date.parse(pubDate));
+    this.pubDate = pubDate;
   }
 }
