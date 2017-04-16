@@ -1,22 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+/* Color Variables */
 $bgColorBody: #f9f9f9;
-$bgColorDetailsBtn: #b8b8b8;
+$bgColorDetailsBtn: #cfcfcf;
+$bgColorDetailsBtnHover: #b8b8b8;
 $bgColorContainer: white;
+$bgColorSubmitButton: #464648;
 $bgGradientCallout: linear-gradient(to left, #00c6f8, #0081e6);
-$submitColor: #464648;
 $fontGeneral: white;
 $fontBlack: black;
 $fontTitle: #0099e5;
 $fontCity: #373737;
 $fontProvince: #a8b8c0;
+$fontSearchResults: indianred;
+$fontButtonText: #6d6d71;
+$fontFooter: #7a98a7;
 
-@mixin flex(){
+/* Mixin's */
+@mixin flex() {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 }
 
-@mixin flexDirection($direction){
+@mixin flexDirection($direction) {
   @if $direction == row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -27,44 +32,55 @@ $fontProvince: #a8b8c0;
   }
   flex-direction: $direction;
   -ms-flex-direction: $direction;
-
 }
 
-html, body, header, .container, .callout, .ngx-pagination{
+@mixin flexGrow($grow) {
+  flex-grow: $grow;
+  -webkit-flex-grow: $grow;
+}
+
+@mixin flexShrink($shrink) {
+  flex-shrink: $shrink;
+  -webkit-flex-shrink: $shrink;
+}
+
+/* Styles */
+html, body, header, .container, .callout, .ngx-pagination {
   min-width: 280px !important;
 }
 
-body{
-    background-color: $bgColorBody;
+body {
+  background-color: $bgColorBody;
 }
-header{
+
+header {
   display: block;
   width: 80vw;
   margin: auto;
-  @media only screen and(max-width: 900px){
+  @media only screen and(max-width: 900px) {
     @include flex;
     @include flexDirection(column);
     flex-grow: 0;
     width: 90vw;
     margin: auto;
   }
-  img{
+  img {
     width: 281px;
-    margin-bottom:12px;
+    margin-bottom: 12px;
   }
   .searchBar {
     @include flex;
     @include flexDirection(row);
     flex-shrink: 1;
-    float:right;
-    @media only screen and (max-width: 900px){
+    float: right;
+    @media only screen and (max-width: 900px) {
       float: none;
     }
     button {
       float: right;
       height: 50px;
       min-width: 100px;
-      background-color: $submitColor;
+      background-color: $bgColorSubmitButton;
       border: none;
       color: $fontGeneral;
     }
@@ -79,12 +95,13 @@ header{
     }
   }
 }
-.callout{
+
+.callout {
   width: 80vw;
   height: 110px;
   background: $bgGradientCallout;
   margin: auto;
-  @media only screen and (max-width: 900px){
+  @media only screen and (max-width: 900px) {
     width: 90vw;
   }
   h1 {
@@ -92,32 +109,38 @@ header{
     text-align: center;
     color: $fontGeneral;
     line-height: 110px;
-    @media only screen and (max-width: 900px){
+    @media only screen and (max-width: 900px) {
       font-size: 22px;
     }
+    @media only screen and (max-width: 640px) {
+      font-size: 17px;
+      white-space: normal;
+      padding: 35px;
+      line-height: 100%;
+    }
   }
-
 }
+
 .container {
   @include flex;
   @include flexDirection(row);
-  flex-shrink:0;
+  flex-shrink: 0;
   width: 80vw;
   height: 140px;
   margin: 3px auto;
   background-color: $bgColorContainer;
   overflow: hidden;
-  @media only screen and (max-width: 900px){
+  @media only screen and (max-width: 900px) {
     width: 90vw;
   }
-  .logo-container{
+  .logo-container {
     @include flex;
-    flex-shrink:0;
+    flex-shrink: 0;
     width: 220px;
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 640px) {
       display: none;
     }
-    img{
+    img {
       display: block;
       width: auto;
       max-height: 100px;
@@ -125,26 +148,27 @@ header{
       margin: auto;
     }
   }
-  .meta-container{
+  .meta-container {
     @include flex;
     @include flexDirection(column);
     width: 100%;
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 640px) {
       padding: 12px;
     }
     .title {
       color: $fontTitle;
       overflow: hidden;
-      height:65px;
-      width:100%;
+      height: 65px;
+      width: 100%;
       margin-top: 5px;
       font-size: 27px;
-      @media only screen and (max-width: 900px){
+      @media only screen and (max-width: 900px) {
         margin-top: 10px;
         font-size: 17px;
       }
-      @media only screen and (max-width: 640px){
+      @media only screen and (max-width: 640px) {
         height: 50px;
+        font-size: 19px;
       }
     }
     .city {
@@ -154,7 +178,7 @@ header{
       color: $fontProvince;
     }
   }
-  .button-container{
+  .button-container {
     height: 100%;
     display: flex;
     padding: 10px;
@@ -163,23 +187,24 @@ header{
       margin: auto;
       :hover, :hover button {
         cursor: pointer;
-        background-color: $bgColorDetailsBtn;
+        background-color: $bgColorDetailsBtnHover;
       }
       button {
-        background-color: #cfcfcf;
+        background-color: $bgColorDetailsBtn;
         border: none;
         width: 166px;
         height: 37px;
-        color: #6d6d71;
-        @media only screen and (max-width: 640px){
+        color: $fontButtonText;
+        @media only screen and (max-width: 640px) {
           width: 100px;
         }
       }
     }
   }
 }
+
 .searchcounter {
-  color: indianred;
+  color: $fontSearchResults;
   font-size: 12px;
 }
 
@@ -188,20 +213,19 @@ header{
   margin-bottom: 1rem !important;;
   margin-right: auto !important;;
   width: 80vw !important;;
-  padding:0;
-  @media only screen and (max-width: 640px){
+  padding: 0;
+  @media only screen and (max-width: 640px) {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
-
 }
 
 footer {
-  width:80vw;
+  width: 80vw;
   height: 140px;
   margin: auto;
   p {
     font-size: 13px;
-    color: #7a98a7;
+    color: $fontFooter;
   }
 }
