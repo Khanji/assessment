@@ -21,6 +21,7 @@
       <div [innerHTML]="item.title" class="title"></div>
       <div [innerHTML]="item.city | capitalize" class="city"></div>
       <div [innerHTML]="item.province ? item.province : '' " class="province"></div>
+      <div [innerHTML]="item.pubDate" class="province"></div>
     </div>
     <div class="button-container">
       <a [href]="item.link" class="details-link"><button class="details">{{detailsButtonStr}}</button></a>
