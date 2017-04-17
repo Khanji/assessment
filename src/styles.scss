@@ -190,11 +190,13 @@ header {
       color: $fontCity;
       max-height: 30px;
       overflow:hidden;
+      font-size: 15px;
     }
     .province {
       color: $fontProvince;
       max-height: 27px;
       overflow:hidden;
+      font-size: 13px;
     }
   }
   .button-container {
